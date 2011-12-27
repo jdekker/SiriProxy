@@ -88,4 +88,12 @@ class SiriProxy::Plugin::Example < SiriProxy::Plugin
     
     request_completed #always complete your request! Otherwise the phone will "spin" at the user!
   end
+    
+    listen_for /who's your daddy?/i do
+    say "You are!" #say something to the user!
+    
+    request_completed #always complete your request! Otherwise the phone will "spin" at the user!
+  end
+  
+  
 end
